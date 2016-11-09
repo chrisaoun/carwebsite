@@ -1,0 +1,36 @@
+.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 360px;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	color: blue;
+}
+
+.body1 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	 color: red;
+	 font-weight: bold
+}
+
+.body2 {
+	color: red;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 22.5px;
+}
