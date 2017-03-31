@@ -1,0 +1,105 @@
+.img { /* image box */
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 360px;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img { /* formatting for image in box */
+    width: 100%;
+    height: auto;
+}
+
+.desc { /* description of image */
+    padding: 15px;
+    text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+	color: black;
+}
+
+.body1 { /* body text */
+	 font-family: "Century Gothic", sans-serif;
+	 color: #a9a9a9;
+	 font-weight: bold
+}
+
+.body2 { /* title */
+	color: #a9a9a9;
+	font-weight: normal;
+	font-size: 22.5px;
+}
+
+.link1 { /* link for more images */
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22.5px;
+	color: red;
+}
+
+.sidenav { /* sidebar */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a { /* text for sidebar */
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+	font-family: "Century Gothic", sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #a9a9a9;
+}
+
+.sidenav .closebtn { /* closing sidebar */
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+input[type=submit]{
+	font-family: "Century Gothic", sans-serif;
+	color: darkslategrey;
+	font-weight: bold
+	
+}
+
+input[type=text]{
+	font-family: "Century Gothic", sans-serif;
+	color: darkslategrey;
+	font-weight: bold
+}
+
+.textbox {
+    width: 700px;
+	height: 350px;
+}
+
+button {
+	font-family: "Century Gothic", sans-serif;
+	font-size: 30px;
+}

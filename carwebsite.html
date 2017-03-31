@@ -1,5 +1,18 @@
 <html>
 <head>
+<script type="text/javascript">
+var username = "Chris"
+var password = "Aoun"
+var user = prompt("Please enter your username.")
+var pass = prompt("Please enter your password.")
+if(user === username)
+{ if (password === pass)
+	{confirm("Welcome!")
+	document.getElementById(welcome).innerHTML = username;}
+}
+else {(confirm("Authentication failed, please try again."))}
+</script>
+
 <link rel="stylesheet" href="Style/stylesheet.css">  <!-- linking the stylesheet to the html file -->
 </head>
 
@@ -8,21 +21,21 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- instructions on when to close the sidebar -->
   <a href="conceptcars.html">Concept</a>
   <a href="suv.html">SUV</a>
-  <a href="#">Sport</a>
+  <a href="sports.html">Sport</a>
   <a href="feedback.html">Feedback</a>
   <br>
-  <img src="Photos/6108452341_2d935758b8_m.jpg"/></a>
-  <img src="Photos/97605x2.jpg"/></a>
+  <br>
+  <img src="Photos/6108452341_2d935758b8_m.jpg"/></a><br>
+  <img src="Photos/97605x2.jpg"/></a><br>
   <img src="Photos/532018-16x9-xs.jpg"/></a>
 </div>
 
 <div id="main">
-  <font face="Century Gothic"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></font><!-- the "open" button for the sidebar -->
+	<div class="button"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div><!-- the "open" button for the sidebar -->
 </div>
 
 <script src="JS/java.js"></script> <!-- javascript for the sidebar (externalized) -->
 
-</body>
 <center>
 <div class="body1">
 <h1><img src="Photos/Logomakr_4QRyKc.png" alt="logo" width="600" height="56"> <!-- the custom-made logo for the website -->
@@ -30,14 +43,13 @@
 <br>
 <br>
 
-<body>
 
 <div class="img"> <!-- the image box that will contain a picture of the car (when clicked it will redirect to original webiste), as well as a description and
 					a link to view more images (via Google Images)-->
   <a target="news1.html" href="http://www.jaguarusa.com/all-models/f-type/coupe-models/f-type-svr.html"><!-- link to website -->
-    <img src="Photos/BN-NG714_Jaguar_J_20160325145004.jpg" alt="jaguar" width="600" height="400"><!-- main image of the car -->
+    <img src="Photos/2017-Jaguar-F-Type-SVR-Wallpaper-Full-HD.jpg" alt="jaguar" width="675" height="400"><!-- main image of the car -->
   </a>
-  <div class="desc"><b>Jaguar F-Type SVR</b></div><!-- car title -->
+  <div class="desc"><b id="welcome">Jaguar F-Type SVR</b></div><!-- car title -->
   <div class="body2"><p>Something very telling of F-Type customers: Apparently some owners of the 
 						previous F-Type felt the car was too quiet at lower speeds. And so the $129,000 
 						F-Type SVR was designed to strike fear at red lights with a more amplified growl. 
@@ -88,7 +100,25 @@
 						with the Cadillac Escalade. Perhaps the most thoughtful feature: an intercom system that lets 
 						those exiled in the last row to communicate with those up front.</p></div>
 						<br><div class="link1"><a href="https://www.google.ca/search?q=Porsche+Boxster+718+S&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjlzI38s6HQAhVGMyYKHV4IB60Q_AUICCgB&biw=1344&bih=736#tbm=isch&q=lincoln+navigator+concept">MORE PHOTOS</a></div><br>
-
+<div class="img">
+  <a target="_blank" href="https://www.ford.com/cars/mustang/2018/">
+    <img src="Photos/2018-Ford-Mustang-101-876x535.jpg" alt="ford" width="675" height="400">
+  </a>
+  <div class="desc"><b>Ford Mustang 2018</b></div>
+  <div class="body2"><p>Between model years 1987 and 1993, the Ford Mustang could only be had with either a 2.3-liter 
+						four-cylinder or a torquey 5.0-liter V-8; a six-cylinder wasn’t on the menu. Now history is 
+						poised to repeat itself with the introduction of the 2018 Ford Mustang, which drops the 
+						current car’s naturally aspirated 3.7-liter V-6 and leaves Ford’s updated pony car with only 
+						two engine choices: a turbocharged 2.3-liter four-cylinder and a naturally aspirated 5.0-liter 
+						Coyote V-8. Of course, today’s Mustang engines are much more powerful than those of 25 years ago. 
+						While Ford isn’t ready to talk numbers, the company notes that the 2.3-liter has been updated 
+						to incorporate a new overboost function. We expect the revised engine, currently rated at 310 
+						horsepower and 320 lb-ft of torque, will boast numbers closer to the version found in the Ford Focus 
+						RS, which is rated at 350 horsepower and 350 lb-ft.</p></div>
+						<br><div class="link1"><a href="https://www.google.ca/search?q=Porsche+Boxster+718+S&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjlzI38s6HQAhVGMyYKHV4IB60Q_AUICCgB&biw=1344&bih=736">MORE PHOTOS</a></div><br>
+</div>
+						
+						
 <div class="img">
   <a target="news1.html" href="http://www.audi.com/en/models/q7.html">
     <img src="Photos/audi-q7-S2512415-1.jpg" alt="audi" width="565" height="400">
