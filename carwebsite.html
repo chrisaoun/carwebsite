@@ -8,11 +8,24 @@ var pass = prompt("Please enter your password.")
 if(user === username)
 { if (password === pass)
 	{confirm("Welcome!")
-	document.getElementById(welcome).innerHTML = username;}
+	window.onload = function() {
+	document.getElementById("username").innerHTML=user;
+}
+	
 }
 else {(confirm("Authentication failed, please try again."))}
-</script>
+}
 
+
+
+</script>
+<div class="body1">
+<table>
+<th><b><a id="username"></a></b></th>
+<table>
+</div>
+
+</body>
 <link rel="stylesheet" href="Style/stylesheet.css">  <!-- linking the stylesheet to the html file -->
 </head>
 
@@ -49,12 +62,8 @@ else {(confirm("Authentication failed, please try again."))}
   <a target="news1.html" href="http://www.jaguarusa.com/all-models/f-type/coupe-models/f-type-svr.html"><!-- link to website -->
     <img src="Photos/2017-Jaguar-F-Type-SVR-Wallpaper-Full-HD.jpg" alt="jaguar" width="675" height="400"><!-- main image of the car -->
   </a>
-  <div class="desc"><b id="welcome">Jaguar F-Type SVR</b></div><!-- car title -->
-  <div class="body2"><p>Something very telling of F-Type customers: Apparently some owners of the 
-						previous F-Type felt the car was too quiet at lower speeds. And so the $129,000 
-						F-Type SVR was designed to strike fear at red lights with a more amplified growl. 
-						But the noise isn’t all show. With a top speed of 200 mile per hour, this is 
-						Jaguar’s very competent effort to throw down in the supercar market.</p></div><!-- description of the car -->
+  <div class="desc"><b id="username">Jaguar F-Type SVR</b></div><!-- car title -->
+  <div class="body2"><p></p></div><!-- description of the car -->
 						<!-- link to more car images --><br><div class="link1"><a href="https://www.google.ca/search?q=Jaguar+F-Type+SVR&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj6yZDFtKHQAhXEZiYKHdHyALoQ_AUICCgB&biw=1344&bih=736">MORE PHOTOS</a></div><br>
 </div>
 
