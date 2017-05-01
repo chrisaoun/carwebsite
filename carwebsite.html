@@ -1,22 +1,25 @@
 <html>
 <head>
 <script type="text/javascript">
-var username = "Chris"
-var password = "Aoun"
-var user = prompt("Please enter your username.")
-var pass = prompt("Please enter your password.")
-if(user === username)
-{ if (password === pass)
-	{confirm("Welcome!")
-	window.onload = function() {
-	document.getElementById("username").innerHTML=user;
-}
-	
-}
-else {(confirm("Authentication failed, please try again."))}
-}
 
+var username = ["Christopher", "Her Majesty Queen Elizabeth the Second, by the Grace of God, of the United Kingdom and Canada, Head of the Commonwealth, Defender of the Faith"]//all the stored strings for "username"
+var password = ["Aoun", "queen"] 								//all the stored strings for "password"
+var incorrect = "Incorrect login"
+var user = prompt("Please enter your username.") 		    	//prompt to enter username
+var pass = prompt("Please enter your password.")				//prompt to enter password
 
+for(i=0; i < username.length; i++) {							//for loop that checks all the strings for the username and password
+	if(username[i] === user) {									//chekcing usernames across the array
+		if(password[i] === pass){								//checking passwords across the array
+		confirm("Welcome!")										//if credentials are correct, welcome message will appear
+		window.onload = function() {							//getting the string to display when logged in (the username)
+			document.getElementById("username").innerHTML=user; 
+		}
+		}
+	   else confirm("Incorrect credentials")					//if credentials are incorrect, error messsage will appear
+	}
+}
+ 
 
 </script>
 <div class="body1">
